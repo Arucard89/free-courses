@@ -4,7 +4,7 @@
 var t1 = + process.argv[2];
 var t2 = + process.argv[3];
 var sum = t1 + t2;
-process.stdout.write(getResultString(sum / 3600|0, (sum % 3600)/60|0, sum % 60));
+console.log(getResultString(sum / 3600|0, (sum % 3600)/60|0, sum % 60));
 
 function getResultString(h,m,s) {
     var str;
