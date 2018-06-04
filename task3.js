@@ -1,5 +1,4 @@
 /* Task 3 */
-
 /* Put your code here */
 'use strict';
 var t1 = + process.argv[2];
