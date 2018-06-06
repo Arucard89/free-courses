@@ -6,13 +6,13 @@ var e = + process.argv[3];
 process.stdout.write(SumOfPower(n, e).toString());
 
 function SumOfPower(n, e) {
-    //return e > 1 ?  (Math.pow(n,e) + SumOfPower(n,e - 1)) : 1;  
-    var res;
-    if (e > 1) {
-        res = Math.pow(n, e) + SumOfPower(n, e - 1);
-    }
-    else {
-        res = 1;
-    };
-    return res;
+//return e > 1 ? (Math.pow(n,e) + SumOfPower(n,e - 1)) : 1;
+var res;
+if (n > 1) {
+res = Math.pow(n, e) + SumOfPower(n - 1, e);
+}
+else {
+res = 1;
+};
+return res;
 }
