@@ -3,7 +3,7 @@
 'use strict';
 var n = + process.argv[2];
 var e = + process.argv[3];
-process.stdout.write(SumOfPower(n, e));
+process.stdout.write(SumOfPower(n, e).toString());
 
 function SumOfPower(n, e) {
     //return e > 1 ?  (Math.pow(n,e) + SumOfPower(n,e - 1)) : 1;  
